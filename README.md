@@ -1,2 +1,14 @@
 # pytorch-ppliteSeg
-pytorch实现的paddle-liteSeg
+
+## train
+
+```
+bash train.sh
+```
+
+## test
+```
+cd tools
+python demo.py
+
+```
