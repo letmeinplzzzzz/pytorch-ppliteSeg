@@ -1,15 +1,15 @@
 # pytorch-ppliteSeg
 
 ## data
+
+Here is the structure of the "data" directory. The images in the "images" folder are in RGB format, while the labels in the "labels" folder are in grayscale format.
+
 ```
 data
 ├── train.txt
 ├── val.txt
 ├── images
 └── labels
-
-
-
 ```
 ## train
 use train.sh to train this model,the traine model will be saved 
