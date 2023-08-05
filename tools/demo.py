@@ -83,7 +83,7 @@ def main():
         model_state_file = os.path.join(final_output_dir, 'best.pth')    
     logger.info('=> loading model from {}'.format(model_state_file))
         
-    pretrained_dict = torch.load('/root/DDRNet.Pytorch/output2/face/pplite/best.pth')
+    pretrained_dict = torch.load('/root/DDRNet.Pytorch/output/face/beimian/best.pth')
     if 'state_dict' in pretrained_dict:
         pretrained_dict = pretrained_dict['state_dict']
 
@@ -100,7 +100,7 @@ def main():
 
 
     test_size = (config.TEST.IMAGE_SIZE[1], config.TEST.IMAGE_SIZE[0])
-    img = cv2.imread("1655.bmp")
+    img = cv2.imread("/root/autodl-tmp/beimian/0713-27/img/117.bmp")
     image1 = img.copy()
     stat1 = time.time()
     img = cv2.resize(img,(512,512))

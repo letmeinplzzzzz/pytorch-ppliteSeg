@@ -276,7 +276,7 @@ def main():
                   epoch_iters, config.TRAIN.LR, num_iters,
                   trainloader, optimizer, model, writer_dict)
 
-        if epoch > 0 :
+        if epoch > 3000 :
             valid_loss, mean_IoU, IoU_array = validate(config, 
                         testloader, model, writer_dict)
 
